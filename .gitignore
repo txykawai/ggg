@@ -1,0 +1,12 @@
+# 忽略数据库文件
+db.sqlite3
+
+# 忽略日志文件
+geckodriver.log
+
+# 忽略 Python 编译文件
+*.pyc
+__pycache__/
+
+# 忽略系统文件（Mac）
+.DS_Store
