@@ -3,14 +3,14 @@ from selenium.webdriver.common.keys import Keys
 import time
 import unittest
 from selenium.webdriver.common.by import By
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.common.exceptions import WebDriverException
+# from selenium.webdriver.chrome.options import Options
 
 MAX_WAIT = 10
 
 
-class NewVisitorTest(LiveServerTestCase):
-    
+class NewVisitorTest(StaticLiveServerTestCase):  
 
     def setUp(self):
         # 在每个测试方法运行之前执行
