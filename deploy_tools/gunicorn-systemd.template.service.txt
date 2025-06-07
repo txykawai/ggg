@@ -1,0 +1,11 @@
+[Unit]
+Description=Gunicorn server for 47.115.217.184
+
+[Service]
+Restart=on-failure
+User=gxq
+WorkingDirectory=/home/gxq/sites/47.115.217.184/source
+ExecStart=/home/gxq/sites/47.115.217.184/virtualenv/bin/gunicorn --bind unix:/tmp/47.115.217.184.socket myproject.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
